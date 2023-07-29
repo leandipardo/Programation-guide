@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/scripts.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <title>Guia programacion</title>
+</head>
+<body>
+    <button class="change-mode"><div class="nube speed-and-pause"><div class="nube-circle1"></div><div class="nube-circle2"></div><div class="nube-circle3"></div><div class="nube-circle4"></div></div><div class="nube2 speed-and-pause"> <div class="nube-circle1"></div><div class="nube-circle2"></div><div class="nube-circle3"></div> <div class="nube-circle4"></div></div><div class="mountain1"></div> <div class="mountain2"></button>
+    <header class="flex-container">
+        <a href="#header">Inicio</a>
+        <a href="#emmet">Emmet</a>
+        <a href="">Markdown</a>
+    </header>
+
+    <br>
+    <h1 class="header-fix" id="header">Guia personal desarrolo front end</h1>
+    <p class="asd">La presente guía tiene como propósito simplificar el proceso de descarga de los programas esenciales para el desarrollo de programación, toma de apuntes y la creación de páginas web. Ha sido elaborada por Leandro Di Pardo y, al encontrarse disponible en línea, su acceso es gratuito y no está sujeta a derechos de autor. </p>
+    <br><br>
+    <h2 id="emmet">Emmet</h2>
+    <p>Emmet es una potente herramienta que agiliza y optimiza el flujo de trabajo en el desarrollo web. Originalmente conocido como "Zen Coding", este conjunto de abreviaciones y atajos de teclado permite a los desarrolladores y diseñadores web escribir código HTML y CSS de manera más rápida y eficiente. Emmet es ampliamente utilizado en la comunidad de desarrollo web debido a su capacidad para aumentar la productividad y la facilidad de escritura de código. A continuación, se presenta una lista con un resumen de algunas de las principales abreviaciones de Emmet.</p>
+
+
+
+
+
+    <ul class="example-menu">
+        <li class="asda"><b>!</b>: Crea la estructura básica de un documento HTML con el doctype, la etiqueta HTML, head y body.</li>  
+                <div class="background-code">
+                    <p style="color:white;">Ejemplo</p>      
+                    <pre>
+<code>
+&lt!DOCTYPE html&gt
+&lthtml&gt
+&lthead&gt
+  &lttitle&gt&lt/title&gt
+&lt/head&gt
+&ltbody&gt
+  
+&lt/body&gt
+&lt/html&gt
+&lt/html&gt</code>
+                    </pre>
+                </div>
+        <li><b>div</b>: Crea un elemento &ltdiv&gt en el código HTML.
+        <li><b>p</b>: Crea un párrafo &ltp&gt en el código HTML.</li>
+            <code></code>
+        <li><b>ul>li</b>: Crea una lista desordenada &ltul&gt con elementos de lista &ltli&gt en el código HTML.</li>
+        <div class="background-code">
+            <p style="color:white;">Ejemplo</p>      
+            <pre>
+<code>
+&ltul&gt
+    &ltli&gt&lt/li&gt
+&lt/ul&gt
+&lt</code>
+            </pre>
+        </div>
+        <li><b>a</b>: Crea un enlace &lta&gt en el código HTML.</li>
+        <li><b>img</b>: Crea una etiqueta &ltimg&gt para insertar una imagen en el código HTML.</li>
+        <li><b>input</b>: Crea una etiqueta &ltinput&gt para un campo de entrada en formularios.</li>
+        <li><b>link</b>: Crea una etiqueta &ltlink&gt para vincular una hoja de estilos CSS.</li>
+        <li><b>#</b>: Crea un identificador (id) en un elemento HTML.</li>
+        <div class="background-code">
+            <p style="color:white;">Ejemplo</p>      
+            <pre>
+<code>
+div#my-div  &gt&gt&gt&gt  &ltdiv id="my-div"&gt&lt/div&gt
+</code>
+            </pre>
+        </div>
+        <li><b>.</b>: Crea una clase (class) en un elemento HTML.</li>
+        <div class="background-code">
+            <p style="color:white;">Ejemplo</p>      
+            <pre>
+<code>
+div.my-div  &gt&gt&gt&gt  &ltdiv class="my-div"&gt&lt/div&gt
+</code>
+            </pre>
+        </div>
+        <li><b>*</b>: Repite el elemento anterior múltiples veces.</li>
+        <div class="background-code">
+            <p style="color:white;">Ejemplo</p>      
+            <pre>
+<code>
+div*3
+
+&ltdiv&gt&lt/div&gt
+&ltdiv&gt&lt/div&gt
+&ltdiv&gt&lt/div&gt
+</code>
+            </pre>
+        </div>
+        <li><b>()</b>: Agrupa elementos y aplica operaciones.</li>
+        <div class="background-code">
+            <p style="color:white;">Ejemplo</p>      
+            <pre>
+<code>
+(div>p)*3 
+&ltdiv&gt
+    &ltp&gt&lt/p&gt
+&lt/div&gt
+&ltdiv&gt
+    &ltp&gt&lt/p&gt
+&lt/div&gt
+&ltdiv&gt
+    &ltp&gt&lt/p&gt
+&lt/div&gt
+&lt/code&gt
+</code>
+            </pre>
+        </div>
+        <li><b>$</b>: Numera elementos seleccionados con números consecutivos.</li>
+        <div class="background-code">
+            <p style="color:white;">Ejemplo</p>      
+            <pre>
+<code>
+    ul>li.item$*5
+
+    &ltul>
+        &ltli class="item1"&gt&lt/li&gt
+        &ltli class="item2"&gt&lt/li&gt
+        &ltli class="item3"&gt&lt/li&gt
+        &ltli class="item4"&gt&lt/li&gt
+        &ltli class="item5"&gt&lt/li&gt
+      &lt/ul&gt
+</code>
+            </pre>
+        </div>
+    </ul>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
