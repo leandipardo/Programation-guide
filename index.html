@@ -12,28 +12,32 @@
     <title>Guia programacion</title>
 </head>
 <body>
-    <button class="change-mode"><div class="nube speed-and-pause"><div class="nube-circle1"></div><div class="nube-circle2"></div><div class="nube-circle3"></div><div class="nube-circle4"></div></div><div class="nube2 speed-and-pause"> <div class="nube-circle1"></div><div class="nube-circle2"></div><div class="nube-circle3"></div> <div class="nube-circle4"></div></div><div class="mountain1"></div> <div class="mountain2"></button>
-    <header class="flex-container">
-        <a href="#header">Inicio</a>
-        <a href="#emmet">Emmet</a>
-        <a href="">Markdown</a>
-    </header>
-
+        <div class="first-carousel">
+            <br>
+            <h1 id="header">Guia personal desarrolo front end</h1>
+            <p>Descarga de programas esenciales, toma de apuntes y links a creación de páginas web</p>
+            <img class="first-carousel-img" src="/assets/background.png" alt="background-img">
+        </div>
+        <header class="flex-container">
+            <a href="#header">Inicio</a>
+            <a href="#emmet">Emmet</a>
+            <a href="">Markdown</a>
+        </header>
+        <button class="change-mode"><div class="nube speed-and-pause"><div class="nube-circle1"></div><div class="nube-circle2"></div><div class="nube-circle3"></div><div class="nube-circle4"></div></div><div class="nube2 speed-and-pause"> <div class="nube-circle1"></div><div class="nube-circle2"></div><div class="nube-circle3"></div> <div class="nube-circle4"></div></div><div class="mountain1"></div> <div class="mountain2"></button>
     <br>
-    <h1 class="header-fix" id="header">Guia personal desarrolo front end</h1>
-    <p class="asd">La presente guía tiene como propósito simplificar el proceso de descarga de los programas esenciales para el desarrollo de programación, toma de apuntes y la creación de páginas web. Ha sido elaborada por Leandro Di Pardo y, al encontrarse disponible en línea, su acceso es gratuito y no está sujeta a derechos de autor. </p>
-    <br><br>
+<br><br>
     <h2 id="emmet">Emmet</h2>
-    <p>Emmet es una potente herramienta que agiliza y optimiza el flujo de trabajo en el desarrollo web. Originalmente conocido como "Zen Coding", este conjunto de abreviaciones y atajos de teclado permite a los desarrolladores y diseñadores web escribir código HTML y CSS de manera más rápida y eficiente. Emmet es ampliamente utilizado en la comunidad de desarrollo web debido a su capacidad para aumentar la productividad y la facilidad de escritura de código. A continuación, se presenta una lista con un resumen de algunas de las principales abreviaciones de Emmet.</p>
+    <p style="margin: 0 10vw;">Emmet es una potente herramienta que agiliza y optimiza el flujo de trabajo en el desarrollo web. Originalmente conocido como "Zen Coding", este conjunto de abreviaciones y atajos de teclado permite a los desarrolladores y diseñadores web escribir código HTML y CSS de manera más rápida y eficiente. Emmet es ampliamente utilizado en la comunidad de desarrollo web debido a su capacidad para aumentar la productividad y la facilidad de escritura de código. A continuación, se presenta una lista con un resumen de algunas de las principales abreviaciones de Emmet.</p>
 
 
 
 
 
-    <ul class="example-menu">
-        <li class="asda"><b>!</b>: Crea la estructura básica de un documento HTML con el doctype, la etiqueta HTML, head y body.</li>  
+    <ul class="ul-container">
+        <img src="/assets/emmet.png" alt="Emmet logo." />
+        <li><b>!</b>: Crea la estructura básica de un documento HTML con el doctype, la etiqueta HTML, head y body.</li>  
                 <div class="background-code">
-                    <p style="color:white;">Ejemplo</p>      
+                    <p>Ejemplo</p>      
                     <pre>
 <code>
 &lt!DOCTYPE html&gt
@@ -53,13 +57,13 @@
             <code></code>
         <li><b>ul>li</b>: Crea una lista desordenada &ltul&gt con elementos de lista &ltli&gt en el código HTML.</li>
         <div class="background-code">
-            <p style="color:white;">Ejemplo</p>      
+            <p>Ejemplo</p>      
             <pre>
-<code>
+        <code>
 &ltul&gt
     &ltli&gt&lt/li&gt
 &lt/ul&gt
-&lt</code>
+        &lt</code>
             </pre>
         </div>
         <li><b>a</b>: Crea un enlace &lta&gt en el código HTML.</li>
@@ -68,7 +72,7 @@
         <li><b>link</b>: Crea una etiqueta &ltlink&gt para vincular una hoja de estilos CSS.</li>
         <li><b>#</b>: Crea un identificador (id) en un elemento HTML.</li>
         <div class="background-code">
-            <p style="color:white;">Ejemplo</p>      
+            <p>Ejemplo</p>      
             <pre>
 <code>
 div#my-div  &gt&gt&gt&gt  &ltdiv id="my-div"&gt&lt/div&gt
@@ -77,7 +81,7 @@ div#my-div  &gt&gt&gt&gt  &ltdiv id="my-div"&gt&lt/div&gt
         </div>
         <li><b>.</b>: Crea una clase (class) en un elemento HTML.</li>
         <div class="background-code">
-            <p style="color:white;">Ejemplo</p>      
+            <p>Ejemplo</p>      
             <pre>
 <code>
 div.my-div  &gt&gt&gt&gt  &ltdiv class="my-div"&gt&lt/div&gt
@@ -86,7 +90,7 @@ div.my-div  &gt&gt&gt&gt  &ltdiv class="my-div"&gt&lt/div&gt
         </div>
         <li><b>*</b>: Repite el elemento anterior múltiples veces.</li>
         <div class="background-code">
-            <p style="color:white;">Ejemplo</p>      
+            <p>Ejemplo</p>      
             <pre>
 <code>
 div*3
@@ -99,10 +103,11 @@ div*3
         </div>
         <li><b>()</b>: Agrupa elementos y aplica operaciones.</li>
         <div class="background-code">
-            <p style="color:white;">Ejemplo</p>      
+            <p>Ejemplo</p>      
             <pre>
 <code>
 (div>p)*3 
+
 &ltdiv&gt
     &ltp&gt&lt/p&gt
 &lt/div&gt
@@ -118,22 +123,23 @@ div*3
         </div>
         <li><b>$</b>: Numera elementos seleccionados con números consecutivos.</li>
         <div class="background-code">
-            <p style="color:white;">Ejemplo</p>      
+            <p>Ejemplo</p>      
             <pre>
 <code>
-    ul>li.item$*5
+ul>li.item$*5
 
-    &ltul>
-        &ltli class="item1"&gt&lt/li&gt
-        &ltli class="item2"&gt&lt/li&gt
-        &ltli class="item3"&gt&lt/li&gt
-        &ltli class="item4"&gt&lt/li&gt
-        &ltli class="item5"&gt&lt/li&gt
-      &lt/ul&gt
+&ltul>
+    &ltli class="item1"&gt&lt/li&gt
+    &ltli class="item2"&gt&lt/li&gt
+    &ltli class="item3"&gt&lt/li&gt
+    &ltli class="item4"&gt&lt/li&gt
+    &ltli class="item5"&gt&lt/li&gt
+&lt/ul&gt
 </code>
             </pre>
         </div>
     </ul>
+
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
