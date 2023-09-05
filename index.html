@@ -10,47 +10,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <title>Guia programacion</title>
 </head>
-<body>
+<body class="active">
+    <div class="scrollbar-conteiner">                       <!-- barra de scroll -->
+        <div class="scrollbar"></div>
+    </div>
         <div class="first-carousel">
             <br>
             <h1 id="header">Guia personal desarrolo front end</h1>
-            <p>Descarga de programas esenciales, toma de apuntes y links a creación de páginas web</p>
+            <p>Descarga de programas esenciales, toma de apuntes y links a creación de páginas web.</p>
             <img class="first-carousel-img" src="/assets/background.png" alt="background-img">
         </div>
         <header class="flex-container">
             <a href="#header">Inicio</a>
             <a href="#emmet">Emmet</a>
             <a href="#markdown">Markdown</a>
+            <a href="#git">Git</a>
             <a href="#html">Html</a>
         </header>
     <br><br><br>
 <div>
     <div class="wrap">
-        <div class="cube">
-            <div class="front" style="background-color: black;">X</div>
-            <div class="back" style="background-color: black;">X</div>
-            <div class="top" style="background-color: black;">X</div>
-            <div class="bottom" style="background-color: black;">X</div>
-            <div class="left" style="background-color: black;">X</div>
-            <div class="right" style="background-color: black;">X</div>
+        <div class="cube active">
+            <div class="front">X</div>
+            <div class="back">X</div>
+            <div class="top">X</div>
+            <div class="bottom">X</div>
+            <div class="left">X</div>
+            <div class="right">X</div>
         </div>
     </div>
     <h2 id="emmet">Emmet</h2>
 </div>
+<div class="button-conteiner">
+    <button class="change-mode translation-button"></button>
+</div>
     <p style="margin: 0 10vw;">Emmet es una potente herramienta que agiliza y optimiza el flujo de trabajo en el desarrollo web. Originalmente conocido como "Zen Coding", este conjunto de abreviaciones y atajos de teclado permite a los desarrolladores y diseñadores web escribir código HTML y CSS de manera más rápida y eficiente. Emmet es ampliamente utilizado en la comunidad de desarrollo web debido a su capacidad para aumentar la productividad y la facilidad de escritura de código. A continuación, se presenta una lista con un resumen de algunas de las principales abreviaciones de Emmet.</p>
     <h3>Principales características de Emmet.</h3>
     <ul class="ul-container">
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <img class="img-border" src="/assets/emmet.png" alt="Emmet-logo" /> 
-            </div>
-            <div class="flip-card-back">
-            <img class="img-border" src="/assets/emmet-back.png" alt="Emmet-logo-back">
-            </div>
-        </div>
-    </div>
-    
         <li>
             <b>!</b>: Crea la estructura básica de un documento HTML con el doctype, la etiqueta HTML, head y body.
         </li>  
@@ -75,7 +71,7 @@
         <li><b>p</b>: Crea un párrafo &ltp&gt en el código HTML.</li>
         <li><b>ul>li</b>: Crea una lista desordenada &ltul&gt con elementos de lista &ltli&gt en el código HTML.</li>
         <div class="background-code">
-            <p>Ejemplo</p>      
+            <p class="transition">Ejemplo</p>      
             <pre class="pre-animation">
         <code class="code-animation">
 &ltul&gt
@@ -91,7 +87,7 @@
         <li><b>link</b>: Crea una etiqueta &ltlink&gt para vincular una hoja de estilos CSS.</li>
         <li><b>#</b>: Crea un identificador (id) en un elemento HTML.</li>
         <div class="background-code">
-            <p>Ejemplo</p>      
+            <p class="transition">Ejemplo</p>      
             <pre class="pre-animation">
 <code class="code-animation">
 div#my-div  &gt&gt&gt&gt  &ltdiv id="my-div"&gt&lt/div&gt
@@ -101,7 +97,7 @@ div#my-div  &gt&gt&gt&gt  &ltdiv id="my-div"&gt&lt/div&gt
         <br>
         <li><b>.</b>: Crea una clase (class) en un elemento HTML.</li>
         <div class="background-code">
-            <p>Ejemplo</p>      
+            <p class="transition">Ejemplo</p>      
             <pre class="pre-animation">
 <code class="code-animation">
 div.my-div  &gt&gt&gt&gt  &ltdiv class="my-div"&gt&lt/div&gt
@@ -111,7 +107,7 @@ div.my-div  &gt&gt&gt&gt  &ltdiv class="my-div"&gt&lt/div&gt
         <br>
         <li><b>*</b>: Repite el elemento anterior múltiples veces.</li>
         <div class="background-code">
-            <p>Ejemplo</p>      
+            <p class="transition">Ejemplo</p>      
             <pre class="pre-animation">
 <code class="code-animation">
 div*3
@@ -125,7 +121,7 @@ div*3
         <br>
         <li><b>()</b>: Agrupa elementos y aplica operaciones.</li>
         <div class="background-code">
-            <p>Ejemplo</p>      
+            <p class="transition">Ejemplo</p>      
             <pre class="pre-animation">
 <code class="code-animation">
 (div>p)*3 
@@ -146,7 +142,7 @@ div*3
         <br>
         <li><b>$</b>: Numera elementos seleccionados con números consecutivos.</li>
         <div class="background-code">
-            <p>Ejemplo</p>      
+            <p class="transition">Ejemplo</p>      
             <pre class="pre-animation">
 <code class="code-animation">
 ul>li.item$*5
@@ -165,13 +161,13 @@ ul>li.item$*5
     </ul>
     <div>
         <div class="wrap">
-            <div class="cube">
-                <div class="front" style="background-color: black;">X</div>
-                <div class="back" style="background-color: black;">X</div>
-                <div class="top" style="background-color: black;">X</div>
-                <div class="bottom" style="background-color: black;">X</div>
-                <div class="left" style="background-color: black;">X</div>
-                <div class="right" style="background-color: black;">X</div>
+            <div class="cube active">
+                <div class="front">X</div>
+                <div class="back">X</div>
+                <div class="top">X</div>
+                <div class="bottom">X</div>
+                <div class="left">X</div>
+                <div class="right">X</div>
             </div>
         </div>
         <h2 id="markdown">Markdown</h2>
@@ -187,38 +183,48 @@ ul>li.item$*5
         <li><b>Bloques de código:</b> Markdown permite incluir bloques de código en tu texto para resaltar sintaxis o mostrar ejemplos. Utiliza tres acentos graves (```) para abrir y cerrar bloques de código.</li>
         <li><b>Separación de secciones:</b> Puedes separar visualmente diferentes secciones de tu texto utilizando líneas horizontales. Usa tres guiones o tres asteriscos (--- o ***).</li>
     </ul>
+        <div>
+        <div class="wrap">
+            <div class="cube active">
+                <div class="front">X</div>
+                <div class="back">X</div>
+                <div class="top">X</div>
+                <div class="bottom">X</div>
+                <div class="left">X</div>
+                <div class="right">X</div>
+            </div>
+        </div>
+        <h2 id="git">Git</h2>
+    </div>
+    <br><br>
+    <section class="seccion-git">
+        <img class="git-img"src="https://jonmircha.com/img/blog/git-centr-decentr.png" alt="git">
+    </section>
+
     <div>
         <div class="wrap">
-            <div class="cube">
-                <div class="front" style="background-color: black;">X</div>
-                <div class="back" style="background-color: black;">X</div>
-                <div class="top" style="background-color: black;">X</div>
-                <div class="bottom" style="background-color: black;">X</div>
-                <div class="left" style="background-color: black;">X</div>
-                <div class="right" style="background-color: black;">X</div>
+            <div class="cube active">
+                <div class="front">X</div>
+                <div class="back">X</div>
+                <div class="top">X</div>
+                <div class="bottom">X</div>
+                <div class="left">X</div>
+                <div class="right">X</div>
             </div>
         </div>
         <h2 id="html">Html</h2>
     </div>
     <br><br>
     <div>
-    <div class="html-img-container">
-        <div class="html-1"> <p>header</p><div class="light"></div></div>
-        <div class="html-2"> <p>article</p><div class="light"></div></div>
-        <div class="html-3"> <p>footer</p><div class="light"></div></div>
-        <div class="html-4"> <p>section</p><div class="light"></div></div>
-        <div class="html-5"> <p>aside</p><div class="light"></div></div>
+        <div class="html-img-container">
+            <div class="html-1"><p>header</p><div class="light"></div></div>
+            <div class="html-2"><p>article</p><div class="light"></div></div>
+            <div class="html-3"><p>footer</p><div class="light"></div></div>
+            <div class="html-4"><p>section</p><div class="light"></div></div>
+            <div class="html-5"><p>aside</p><div class="light"></div></div>
+        </div>
     </div>
-</div>
     <p style="text-align: center; font-size: small;"><i>estructura de una pagina html</i></p>
-
-    
-    
-    
-    
-    
-    
-    
     <h3>callback</h3>
     <div style="background-color: black; border-radius: 5px; width: fit-content; height: fit-content; margin-left: 15vw;">
         <pre>
@@ -236,6 +242,7 @@ cuadradoCallback(0, <span style="color: rgb(55, 142, 214)">(</span><span style="
     </pre>
     </div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <script src="./script.js"></script>
+    <script src="/js/modulos.js" type="module"></script>
+    <script src="/js/nomodule.js" nomodule></script>
 </body>
 </html>
