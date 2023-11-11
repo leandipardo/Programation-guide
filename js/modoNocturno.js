@@ -1,18 +1,7 @@
 const d = document,
-nightModeBody = d.querySelector("body"),
-buttonNightMode = d.querySelectorAll(".cube"),
+$nightModeBody = d.querySelector("body"),
 $button = d.querySelector(".change-mode");
-
-
 export default function nightMode(){
   $button.classList.toggle("translation-button")
-    SwitchMode(nightModeBody);
-    buttonNightMode.forEach((element) => {
-      SwitchMode(element);
-    });
-  }
-function SwitchMode(x){
-  x.classList.toggle("inactive");
-  x.classList.toggle("active");
-}
-
+  $nightModeBody.classList.toggle("active");
+  };
